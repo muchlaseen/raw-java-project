@@ -12,6 +12,8 @@ import javax.swing.*;
  * @author muchlas
  */
 public class Komponen extends JFrame {
+    
+    // Frame Dashboard
     JLabel label = new JLabel("----LAUNDRY----");
     JLabel nama = new JLabel("Nama Pelanggan\t: ");
     JLabel nohp = new JLabel("Nomor HP\t: ");
@@ -37,6 +39,26 @@ public class Komponen extends JFrame {
     public void proses() {
         harga = Integer.parseInt(br.getText()) * 15000;
     }
+    
+    // Frame Pegawai
+   
+    JFrame frame = new JFrame();
+    Object rowData[][] = { { "", "", "" },
+                           { "", "", "" },
+                           { "", "", "" }
+    };
+    
+    Object columnNames[] = { "Nama", "No Hp", "Password" };
+    JTable table = new JTable(rowData, columnNames);
+    JScrollPane scrollPane = new JScrollPane(table);
+    
+    JLabel empTitle = new JLabel("PEGAWAI");
+    JLabel empNama = new JLabel("Nama\t: ");
+    JLabel empPhone = new JLabel("No Hp\t: ");
+    JLabel empPass = new JLabel("Password\t: ");
+    
+    JTextField 
+    
     
     
 }

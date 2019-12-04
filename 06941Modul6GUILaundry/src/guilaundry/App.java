@@ -11,6 +11,7 @@ package guilaundry;
  */
 public class App {
     public static void main(String[] args) {
-        GUI joss = new GUI();
+        GUIPegawai pegawai = new GUIPegawai();
+        
     }
 }

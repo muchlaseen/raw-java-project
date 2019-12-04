@@ -5,6 +5,9 @@
  */
 package guilaundry;
 
+import java.awt.Dimension;
+import javax.swing.JFrame;
+
 /**
  *
  * @author muchlas
@@ -12,6 +15,13 @@ package guilaundry;
 public class GUIPegawai extends Komponen {
     public GUIPegawai() {
         
+        
+        
+        frame.add(scrollPane);
+        
+        frame.setSize(500, 300);
+        frame.setVisible(true);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
     
 }
